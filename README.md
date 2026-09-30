@@ -18,7 +18,7 @@ The scheduling simulator and Figures 5-6 belong to the separate
 | Sp2Dense | [sp2dense](experiments/sp2dense/README.md) | delta1 | 4 |
 | MobileNetV2-SSD-Lite | [mobilenetv2_ssd](experiments/mobilenetv2_ssd/README.md) | VOC mAP | 4 |
 | ResNet50 | [resnet50](experiments/resnet50/README.md) | ImageNet top-5 | 7 |
-| VGG11 | [vgg11](experiments/vgg11/README.md) | ImageNet top-5 | 4, inferred subset |
+| VGG11 | [vgg11](experiments/vgg11/README.md) | ImageNet top-5 | 4 |
 | InceptionV3 | [inceptionv3](experiments/inceptionv3/README.md) | ImageNet top-5 | 3 |
 | Swin-Tiny | [swin_tiny](experiments/swin_tiny/README.md) | ImageNet top-5 | 4 |
 
@@ -40,7 +40,7 @@ python -m pip install -r requirements.txt
 
 For fewer dependencies, install `pip install -e .` for the torchvision
 classification experiments, or add `[swin]`, `[ssd]`, or `[depth]` for the
-corresponding experiment. `requirements.txt` installs all Python dependencies.
+corresponding experiment. `requirements.txt` installs all Python dependencies.f
 Sp2Dense additionally requires the [external checkout setup](experiments/sp2dense/README.md);
 its upstream source is not bundled or downloaded during installation.
 
