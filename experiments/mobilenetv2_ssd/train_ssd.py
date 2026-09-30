@@ -171,6 +171,7 @@ def main():
     logging.basicConfig(stream=sys.stdout, level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     args = parser.parse_args()
+    os.makedirs(args.checkpoint_folder, exist_ok=True)
     args.datasets = [os.path.expanduser(path) for path in args.datasets]
     args.validation_dataset = os.path.expanduser(args.validation_dataset)
 

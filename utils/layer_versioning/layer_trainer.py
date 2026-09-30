@@ -149,8 +149,10 @@ class LayerVersionTrainer:
         return val_loss / len(self.val_loader), 100. * correct / total, 100. * correct5 / total
 
     def train(self):
-        best_val_top1_acc = 0.0
-        best_val_top5_acc = 0.0
+        if self.num_epochs < 1:
+            raise ValueError("num_epochs must be positive")
+        best_val_top1_acc = float("-inf")
+        best_val_top5_acc = float("-inf")
         train_losses = []
         train_accuracies = []
         val_losses = []
@@ -158,6 +160,7 @@ class LayerVersionTrainer:
         val_top5_accuracies = []
 
         for epoch in range(self.num_epochs):
+            self.epoch = epoch + 1
             print(f"\nEpoch {epoch+1}/{self.num_epochs}")
             print("-" * 60)
             
@@ -176,6 +179,7 @@ class LayerVersionTrainer:
             val_losses.append(val_loss)
             val_top1_accuracies.append(val_top1_acc)
             val_top5_accuracies.append(val_top5_acc)
+            best_val_top5_acc = max(best_val_top5_acc, val_top5_acc)
 
             print(f"Results - Train Loss: {train_loss:.4f}, Train Acc: {train_top1_acc:.2f}%, Train Top-5 Acc: {train_top5_acc:.2f}%")
             print(f"Results - Val Loss: {val_loss:.4f}, Val Acc: {val_top1_acc:.2f}%, Val Top-5 Acc: {val_top5_acc:.2f}%")

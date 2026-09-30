@@ -85,6 +85,53 @@ class ReleaseChecks(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError, 'no result recorded'):
                     module.main(args)
 
+    def test_resnet_trainer_saves_zero_accuracy_and_tracks_top5(self):
+        from utils.layer_versioning.layer_trainer import LayerVersionTrainer
+        model = nn.Linear(2, 6)
+        with tempfile.TemporaryDirectory() as directory, \
+             contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            name = str(Path(directory) / 'model')
+            trainer = LayerVersionTrainer(model, name, None, [], [], [],
+                                          torch.optim.SGD(model.parameters(), lr=0.01),
+                                          nn.CrossEntropyLoss(), 2, torch.device('cpu'))
+            with patch.object(trainer, '_train_epoch', return_value=(1.0, 0.0, 20.0)), \
+                 patch.object(trainer, 'validate', side_effect=[(1.0, 0.0, 40.0), (0.9, 0.0, 60.0)]):
+                result = trainer.train()
+            saved = torch.load(name + '_best.pth', map_location='cpu', weights_only=True)
+            self.assertEqual(saved['epoch'], 0)
+            self.assertEqual(saved['val_top1_acc'], 0.0)
+            self.assertEqual(result['best_val_top5_acc'], 60.0)
+            self.assertEqual(trainer.epoch, 2)
+
+    def test_small_validation_set_requires_opt_in_and_matching_labels(self):
+        from experiments.resnet50 import resnet50_retrain
+        from experiments.vgg11 import vgg_retrain
+        from experiments.inceptionv3 import inception_retrain
+        from experiments.swin_tiny import swin_retrain
+        from PIL import Image
+        modules = (resnet50_retrain, vgg_retrain, inception_retrain, swin_retrain)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            Image.new('RGB', (8, 8)).save(root / 'ILSVRC2012_val_00000001.JPEG')
+            labels = root / 'labels.txt'
+            for module in modules:
+                with self.subTest(module=module.__name__):
+                    labels.write_text('1\n')
+                    kwargs = dict(root=str(root), gt_file=str(labels))
+                    if module is not resnet50_retrain:
+                        kwargs['meta_file'] = 'unused-without-transform'
+                    with self.assertRaisesRegex(ValueError, '50,000'):
+                        module.ImageNetValFlat(**kwargs)
+                    dataset = module.ImageNetValFlat(**kwargs, allow_subset=True)
+                    self.assertEqual(len(dataset), 1)
+                    self.assertEqual(dataset[0][1], 0)
+                    labels.write_text('1\n2\n')
+                    with self.assertRaisesRegex(ValueError, 'mismatch'):
+                        module.ImageNetValFlat(**kwargs, allow_subset=True)
+                    labels.write_text('')
+                    with self.assertRaises(ValueError):
+                        module.ImageNetValFlat(**kwargs, allow_subset=True)
+
     def test_invalid_layer_replacement_raises(self):
         from utils.layer_versioning.train_helper import setup_custom_layer_model
         with self.assertRaises(RuntimeError):

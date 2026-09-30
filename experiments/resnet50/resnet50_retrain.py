@@ -118,7 +118,7 @@ class ImageNetValFlat(Dataset):
     Each line in the txt is a 1‑based class index (1‥1000) in the alphabetical
     order of the filenames.
     """
-    def __init__(self, root, gt_file, transform=None):
+    def __init__(self, root, gt_file, transform=None, allow_subset=False):
         self.root = root
         self.transform = transform
         # sort filenames by numeric ID to match ground-truth ordering
@@ -136,8 +136,10 @@ class ImageNetValFlat(Dataset):
             meta_path = META_MAT
             self._id_map = build_id_to_classidx(meta_path)
             self.labels = [self._id_map[label] for label in self.labels]
-        assert len(self.filenames) == len(self.labels) == 50_000, \
-            "Image/label count mismatch; check directory or ground‑truth file."
+        if not self.filenames or len(self.filenames) != len(self.labels):
+            raise ValueError("Image/label count mismatch or empty validation dataset.")
+        if not allow_subset and len(self.filenames) != 50_000:
+            raise ValueError("Expected 50,000 validation images; use --allow-val-subset for a small test dataset.")
 
     def __len__(self):
         return len(self.filenames)
@@ -172,7 +174,7 @@ def build_id_to_classidx(devkit_meta_path: str):
         id_to_classidx[ilsvrc_id - 1] = wnid_to_classidx[wnid]
     return id_to_classidx
 
-def build_test_loader():
+def build_test_loader(allow_subset=False):
     imagenet_transforms = T.Compose([
         T.Resize(256),
         T.CenterCrop(224),
@@ -183,6 +185,7 @@ def build_test_loader():
         root=IMAGENET_VAL_DIR,
         gt_file=GROUND_TRUTH_TXT,
         transform=imagenet_transforms,
+        allow_subset=allow_subset,
     )
     return DataLoader(
         dataset,
@@ -325,7 +328,7 @@ def main(args):
     ]
 
     test_models = []
-    test_loader = build_test_loader()
+    test_loader = build_test_loader(args.allow_val_subset)
 
     state_dict = models.resnet50(weights="IMAGENET1K_V1").state_dict()
     print("Model's state_dict:")
@@ -405,5 +408,6 @@ if __name__ == "__main__":
     parser.add_argument("--epochs", type=int, default=NUM_EPOCHS)
     parser.add_argument("--batch_size", type=int, default=BATCH_SIZE)
     parser.add_argument("--workers", type=int, default=NUM_WORKERS)
+    parser.add_argument('--allow-val-subset', action='store_true', help='Allow a smaller validation set with matching labels for smoke tests.')
     parser.add_argument("--checkpoint_dir", default=CHECKPOINT_DIR)
     main(parser.parse_args())

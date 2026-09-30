@@ -73,7 +73,7 @@ are not recorded as zero accuracy. Saved historical tables are unchanged.
 Datasets and trained weights are not bundled. There is currently no verified
 public download location for the project's custom variant checkpoints. Model
 READMEs list the expected filenames. Baseline constructors may download upstream
-weights when training/export is explicitly run; the smoke tests do not.
+weights when training/export is explicitly run; the import/unit checks do not.
 
 ## Saved paper results
 
@@ -105,6 +105,28 @@ preprocessing, a complete Sp2Dense CPU forward pass, and legacy checkpoints.
 They do not retrain models, download weights, or reproduce scheduling results.
 The integration checks passed locally with the environment described above.
 Full dataset evaluation and paper-checkpoint provenance remain unverified.
+
+Separate one-epoch CPU training checks passed for all 27 candidate layer variants
+(ResNet50: 7, VGG11: 5, InceptionV3: 3, Swin-Tiny: 4, SSD: 4, Sp2Dense: 4), plus
+the SSD baseline trainer. These checks used synthetic images/annotations at the
+normal input resolutions, batch size 2, and zero data-loader workers. ImageNet
+fixtures contained 10 training and 2 validation images; VOC and NYU fixtures
+contained 2 training and 2 validation samples each. ResNet50 used its usual 90/10
+training split in addition to the validation fixtures.
+
+ResNet50, VGG11, InceptionV3, and SSD loaded cached pretrained baselines. Swin and
+Sp2Dense used generated checkpoints with the full model architectures; the depth
+fixture used a positive output head so logarithmic depth metrics were defined.
+The checks verified finite losses/gradients, optimizer updates, unchanged frozen
+parameters, and saved checkpoint reloads. They do not establish real-data
+accuracy, convergence, GPU execution, or paper reproduction.
+
+For a small ImageNet-format training check, pass `--epochs 1 --batch_size 2
+--workers 0 --allow-val-subset` to the classification trainer. The validation
+directory must contain matching image and ground-truth counts; the flag opts out
+of the default 50,000-image requirement. Preserve ImageNet class indices and
+devkit metadata when preparing a real subset. Swin also accepts
+`--model-name-or-path /path/to/local/model` for an offline Hugging Face checkpoint.
 
 ## Provenance and release status
 

@@ -43,8 +43,10 @@ editing the external checkout. Checkpoints produced by the new trainer contain
 state dictionaries and identify their modified layer. These implementation and
 logging changes are not a claim to reproduce the original training run exactly.
 
-Synthetic HDF5 preprocessing, full ResNet18 forward execution, and checkpoint
-round trips are tested on CPU. Use zero data-loader workers for portability;
+Synthetic HDF5 preprocessing, full ResNet18 forward execution, one training epoch
+for each of the four variants, and checkpoint round trips are tested on CPU.
+The training check used a generated baseline with a positive output head;
+it does not validate a historical paper checkpoint. Use zero data-loader workers for portability;
 multiple workers require the Linux `fork` start method with the dynamic upstream
 modules. No full dataset training/evaluation or GPU validation was performed.
 

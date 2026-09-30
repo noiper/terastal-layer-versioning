@@ -179,6 +179,7 @@ if __name__ == '__main__':
     logging.basicConfig(stream=sys.stdout, level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     args = parser.parse_args()
+    os.makedirs(args.checkpoint_folder, exist_ok=True)
     args.datasets = [os.path.expanduser(path) for path in args.datasets]
     args.validation_dataset = os.path.expanduser(args.validation_dataset)
     DEVICE = torch.device("cuda:0" if torch.cuda.is_available() and args.use_cuda else "cpu")

@@ -82,7 +82,7 @@ def freeze_model_except(model, trainable_layer_names):
 
 class ImageNetValFlat(Dataset):
     """ Custom Dataset for the flat ImageNet validation folder structure. """
-    def __init__(self, root, gt_file, meta_file, transform=None):
+    def __init__(self, root, gt_file, meta_file, transform=None, allow_subset=False):
         self.root = root
         self.transform = transform
         import re
@@ -98,7 +98,10 @@ class ImageNetValFlat(Dataset):
             self._id_map = build_id_to_classidx(meta_file)
             self.labels = [self._id_map[label] for label in self.labels]
         
-        assert len(self.filenames) == len(self.labels) == 50_000, "Image/label count mismatch."
+        if not self.filenames or len(self.filenames) != len(self.labels):
+            raise ValueError("Image/label count mismatch or empty validation dataset.")
+        if not allow_subset and len(self.filenames) != 50_000:
+            raise ValueError("Expected 50,000 validation images; use --allow-val-subset for a small test dataset.")
 
     def __len__(self):
         return len(self.filenames)
@@ -124,7 +127,7 @@ def build_id_to_classidx(devkit_meta_path: str):
     return id_to_classidx
 
 # --- MODIFIED FOR INCEPTIONV3 ---
-def get_imagenet_loaders(data_dir, batch_size, num_workers):
+def get_imagenet_loaders(data_dir, batch_size, num_workers, allow_val_subset=False):
     """ Creates train and validation DataLoaders for ImageNet (InceptionV3 size). """
     train_dir = os.path.join(data_dir, 'ILSVRC2012_img_train')
     val_dir = os.path.join(data_dir, 'ILSVRC2012_img_val')
@@ -153,7 +156,7 @@ def get_imagenet_loaders(data_dir, batch_size, num_workers):
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers, pin_memory=True)
     
     print("Setting up ImageNet validation data loader (299x299)...")
-    val_dataset = ImageNetValFlat(root=val_dir, gt_file=gt_file, meta_file=meta_file, transform=val_transform)
+    val_dataset = ImageNetValFlat(root=val_dir, gt_file=gt_file, meta_file=meta_file, transform=val_transform, allow_subset=allow_val_subset)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=num_workers, pin_memory=True)
     
     return train_loader, val_loader
@@ -268,7 +271,7 @@ def main(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
     
-    train_loader, val_loader = get_imagenet_loaders(args.local_imagenet_path, args.batch_size, args.workers)
+    train_loader, val_loader = get_imagenet_loaders(args.local_imagenet_path, args.batch_size, args.workers, args.allow_val_subset)
     
     os.makedirs(args.save_dir, exist_ok=True)
     
@@ -350,6 +353,7 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=5, help='Number of epochs to train.')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch size for training and evaluation. (e.g., 128 or 256)')
     parser.add_argument('--workers', type=int, default=8, help='Number of worker processes for data loading.')
+    parser.add_argument('--allow-val-subset', action='store_true', help='Allow a smaller validation set with matching labels for smoke tests.')
     args = parser.parse_args()
     
     # Verify paths

@@ -2,6 +2,8 @@
 
 Source: `swin_retrain@a5058c0`. Install the `[swin]` or `[all]` dependency extra.
 The upstream baseline is `microsoft/swin-tiny-patch4-window7-224`.
+Use `--model-name-or-path /path/to/local/model` to load a local Hugging Face
+checkpoint without downloading it.
 
 Four `r=2` variants: `swin.encoder.layers.3.blocks.0.intermediate.dense`,
 `swin.encoder.layers.3.blocks.0.output.dense`,
