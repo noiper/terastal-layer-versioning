@@ -1,0 +1,39 @@
+======================================================================
+--- FINAL InceptionV3 COMBINATION ANALYSIS SUMMARY ---
+(Sorted by Top-1 Accuracy)
+======================================================================
+
+Model: Original InceptionV3 (Baseline)
+  > Top-1 Accuracy: 77.47%
+  > Top-5 Accuracy: 93.52%
+
+Model: Converted: Mixed_6a.branch3x3.conv
+  > Top-1 Accuracy: 77.02%
+  > Top-5 Accuracy: 93.37%
+
+Model: Converted: Mixed_7c.branch3x3dbl_1.conv
+  > Top-1 Accuracy: 76.48%
+  > Top-5 Accuracy: 92.91%
+
+Model: Converted: Conv2d_4a_3x3.conv
+  > Top-1 Accuracy: 75.99%
+  > Top-5 Accuracy: 92.57%
+
+Model: Converted: Mixed_6a.branch3x3.conv, Mixed_7c.branch3x3dbl_1.conv
+  > Top-1 Accuracy: 39.72%
+  > Top-5 Accuracy: 61.63%
+
+Model: Converted: Conv2d_4a_3x3.conv, Mixed_7c.branch3x3dbl_1.conv
+  > Top-1 Accuracy: 0.14%
+  > Top-5 Accuracy: 0.57%
+
+Model: Converted: Conv2d_4a_3x3.conv, Mixed_6a.branch3x3.conv
+  > Top-1 Accuracy: 0.11%
+  > Top-5 Accuracy: 0.53%
+
+Model: Converted: Conv2d_4a_3x3.conv, Mixed_6a.branch3x3.conv, Mixed_7c.branch3x3dbl_1.conv
+  > Top-1 Accuracy: 0.11%
+  > Top-5 Accuracy: 0.48%
+
+======================================================================
+Combination analysis complete.

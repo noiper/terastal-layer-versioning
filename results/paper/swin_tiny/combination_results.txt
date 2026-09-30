@@ -1,0 +1,70 @@
+======================================================================
+--- FINAL COMBINATION ANALYSIS SUMMARY ---
+======================================================================
+
+Model: Original Model (Baseline)
+  > Top-1 Accuracy: 80.70%
+  > Top-5 Accuracy: 95.36%
+
+Model: Converted: idx0
+  > Top-1 Accuracy: 78.77%
+  > Top-5 Accuracy: 94.45%
+
+Model: Converted: idx1
+  > Top-1 Accuracy: 79.35%
+  > Top-5 Accuracy: 94.75%
+
+Model: Converted: idx2
+  > Top-1 Accuracy: 79.17%
+  > Top-5 Accuracy: 94.75%
+
+Model: Converted: idx3
+  > Top-1 Accuracy: 79.90%
+  > Top-5 Accuracy: 95.06%
+
+Model: Converted: idx0, idx1
+  > Top-1 Accuracy: 78.89%
+  > Top-5 Accuracy: 94.50%
+
+Model: Converted: idx0, idx2
+  > Top-1 Accuracy: 68.70%
+  > Top-5 Accuracy: 89.77%
+
+Model: Converted: idx0, idx3
+  > Top-1 Accuracy: 73.57%
+  > Top-5 Accuracy: 92.20%
+
+Model: Converted: idx1, idx2
+  > Top-1 Accuracy: 71.63%
+  > Top-5 Accuracy: 91.23%
+
+Model: Converted: idx1, idx3
+  > Top-1 Accuracy: 75.80%
+  > Top-5 Accuracy: 93.28%
+
+Model: Converted: idx2, idx3
+  > Top-1 Accuracy: 79.61%
+  > Top-5 Accuracy: 94.92%
+
+Model: Converted: idx0, idx1, idx2
+  > Top-1 Accuracy: 70.45%
+  > Top-5 Accuracy: 90.41%
+
+Model: Converted: idx0, idx1, idx3
+  > Top-1 Accuracy: 74.81%
+  > Top-5 Accuracy: 92.84%
+
+Model: Converted: idx0, idx2, idx3
+  > Top-1 Accuracy: 72.51%
+  > Top-5 Accuracy: 91.51%
+
+Model: Converted: idx1, idx2, idx3
+  > Top-1 Accuracy: 74.91%
+  > Top-5 Accuracy: 92.90%
+
+Model: Converted: idx0, idx1, idx2, idx3
+  > Top-1 Accuracy: 73.84%
+  > Top-5 Accuracy: 92.11%
+
+======================================================================
+Combination analysis complete.

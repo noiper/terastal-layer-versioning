@@ -1,0 +1,147 @@
+# Model weights, serialized metrics, and exported binary models (any size).
+*.pth
+*.pth.*
+*.pt
+*.pt.*
+*.ckpt
+*.ckpt.*
+*.safetensors
+*.weights
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.engine
+*.tflite
+*.pb
+*.bin
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Datasets and downloaded archives. Keep the vendored Python dataset loaders.
+data/
+datasets/
+/external/
+!vision/datasets/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Training/evaluation directories. "models" also names a source package:
+# ignore checkpoint directories only at the root and inside experiments.
+/models/
+/experiments/**/models/
+checkpoints/
+saved_models/
+weights/
+outputs/
+runs/
+logs/
+eval_results/
+tensorboard/
+wandb/
+mlruns/
+results/
+!/results/
+/results/*
+!/results/paper/
+
+# The exporters write MAESTRO .m files and model/layer-map .txt files.
+# Evaluators also write combination-result .txt files in the run directory.
+# Keep reviewed snapshots and required input/configuration text explicitly.
+*.m
+*.txt
+!/experiments/*/exports/*.m
+!/experiments/*/exports/*.txt
+!/results/paper/**/*.txt
+!/requirements*.txt
+!/requirements/**/*.txt
+!/experiments/mobilenetv2_ssd/voc-model-labels.txt
+!LICENSE*.txt
+!NOTICE*.txt
+!COPYING*.txt
+
+# Additional generated metrics, depth comparisons, and profiler output.
+layer_combination_results*.csv
+train.csv
+test.csv
+!/results/paper/**/*.csv
+comparison_*.png
+*.log
+*.log.*
+events.out.tfevents.*
+*.prof
+*.trace.json
+
+# Papers and other local PDF documents.
+*.[pP][dD][fF]
+
+# AI working notes and tool state. Public READMEs, attribution, and known
+# limitations remain publishable; do not blanket-ignore Markdown.
+.agents/
+.codex/
+.claude/
+.cursor/
+.ai/
+.aider*
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+CLAUDE.local.md
+CODEX.md
+GEMINI.md
+PAPER_RELEASE_AUDIT.md
+/docs/VALIDATION.md
+/.validation/
+/.local-backups/
+*.bundle
+
+# Local environment and credentials; templates may be published deliberately.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.aws/
+.ssh/
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches, packaging, test and notebook intermediates.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Editor, OS, and temporary files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej

@@ -1,0 +1,1381 @@
+{
+  "base_main": "9078fc4a3a42cfdacc11e33c9fedba44af81d533",
+  "sources": {
+    "utils/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "utils/layer_versioning/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "utils/layer_versioning/model_analysis.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/model_analysis.py",
+      "sha256": "b4fade0d9728fe32c437095a63ba92bebc83abb6ed7a906d395de036a23a429a",
+      "integrated_sha256": "e1dbe8538ce3f5df419d3cbaca1417f4dd04955b694aab54e3a2ca4a629a8350",
+      "modified_during_integration": true
+    },
+    "utils/layer_versioning/train_helper.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/train_helper.py",
+      "sha256": "af8b75eed0a4a328c8c5d9ed337ec7339b24d26556957a95b8e1be48e3e53fc6",
+      "integrated_sha256": "4b64b8f18fc29b75ecc7f358ab4004d420c761305c22511c2fc494c6c315ef30",
+      "modified_during_integration": true
+    },
+    "utils/layer_versioning/layer_trainer.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/layer_trainer.py",
+      "sha256": "bad41663847dea9bd656f8905739fe5219f5aa6c32f7fbc97acfdc3ad07e427d",
+      "integrated_sha256": "bad41663847dea9bd656f8905739fe5219f5aa6c32f7fbc97acfdc3ad07e427d",
+      "modified_during_integration": false
+    },
+    "utils/layer_versioning/models/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/models/__init__.py",
+      "sha256": "a225d33952105426d7276887c2e0e1f9f80afe26a0b127ec139768cb34702915",
+      "integrated_sha256": "a225d33952105426d7276887c2e0e1f9f80afe26a0b127ec139768cb34702915",
+      "modified_during_integration": false
+    },
+    "utils/layer_versioning/models/D2SConvS2D.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/models/D2SConvS2D.py",
+      "sha256": "c020e07a78307039d7d5198939f691c71b3c8ad835bc632b7f114c616bbb47b8",
+      "integrated_sha256": "c020e07a78307039d7d5198939f691c71b3c8ad835bc632b7f114c616bbb47b8",
+      "modified_during_integration": false
+    },
+    "utils/layer_versioning/models/Linear2Conv.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/models/Linear2Conv.py",
+      "sha256": "929174c257381e569f254745db6d1e4084baa9eba4176fac6ee47056837bb073",
+      "integrated_sha256": "929174c257381e569f254745db6d1e4084baa9eba4176fac6ee47056837bb073",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/vgg_retrain.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg_retrain.py",
+      "sha256": "db25b4fdba7bce369499b1a45f46fbaf74c2bdce1a80ca64e4e0744d23e85df8",
+      "integrated_sha256": "9f5b72d1c1105a3f516a3691e67ea7d7357cd2b34f6cad5dbf8323cf51a2cd5c",
+      "modified_during_integration": true
+    },
+    "experiments/vgg11/vgg_comb_test.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg_comb_test.py",
+      "sha256": "f79d7ed1f64b4e3e9c63cf4beeb96a4bb8323bad5375aba0872bf987d05f070b",
+      "integrated_sha256": "fb8180d1943c054392fd237b19c69a1330eab9ecf79d7c9c8b181470ca7c5546",
+      "modified_during_integration": true
+    },
+    "experiments/vgg11/vgg_versioning.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg_versioning.py",
+      "sha256": "54551381fa88884c49ade86da3dc390184555636f863d6a0564bc2a0b8cd54fe",
+      "integrated_sha256": "11764837636ec9a051693c6736b9d5e7d1189dba257115b7b1a38847dc0e8398",
+      "modified_during_integration": true
+    },
+    "experiments/inceptionv3/inception_retrain.py": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inception_retrain.py",
+      "sha256": "b3e5328eccd1521e14fef9d796b566aedc244bd5bb358ccc9a2a3069dc463dac",
+      "integrated_sha256": "bae1c847cbcd2a35b435998e08d21bb4e13c1486afdac42f416ce8af7df96c02",
+      "modified_during_integration": true
+    },
+    "experiments/inceptionv3/test_comb_inception.py": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "test_comb_inception.py",
+      "sha256": "a1df2f3c143f9e68a99e3beed3b98c91cc5dbe4fa96bb6bf286b118b83f41915",
+      "integrated_sha256": "cfa850de5d6ac72fa423c2f061ec95c617a8c868e3a8395f9a801891dd6fabe7",
+      "modified_during_integration": true
+    },
+    "experiments/inceptionv3/inception_versioning.py": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inception_versioning.py",
+      "sha256": "23f30e3daeddd3dea67f8a0acc4a6e1d11305dccfe8cbf8fb45c047cbbf77ec0",
+      "integrated_sha256": "e7da80c4a05800c1c4fa0173321692ddee89ba93b64a3eba36342f1e59687bc2",
+      "modified_during_integration": true
+    },
+    "experiments/inceptionv3/inception_evaluate.py": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inception_evaluate.py",
+      "sha256": "3f112193b5cfc4c5067b18616e407e59b39d0701e98d123ed44bc77681bfab68",
+      "integrated_sha256": "e08c3bae23d2c0cd23bb5486e97c6ad3e93b9b13d2b36f88a31aa3c534d1ba11",
+      "modified_during_integration": true
+    },
+    "experiments/swin_tiny/swin_retrain.py": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin_retrain.py",
+      "sha256": "403f533abe1d65f338fd58eb193fe4e72c02b8b803044df7b29e9e4113dad2d9",
+      "integrated_sha256": "3dfda86951c590a0396ca42684e5b567d4aeb30aed93c266b63e1bc6586e33fe",
+      "modified_during_integration": true
+    },
+    "experiments/swin_tiny/test_comb.py": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "test_comb.py",
+      "sha256": "51ce0da6d43addfa39686f8069796c18add2c14c501eebdeb548212a9c467f27",
+      "integrated_sha256": "87efedfa1fb8364a28b24d56b3133e24fa886c3276364e10047e5e25f6c0a18b",
+      "modified_during_integration": true
+    },
+    "experiments/swin_tiny/swin_analysis.py": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin_analysis.py",
+      "sha256": "ff1f6f2ffbdbc5cc75c602a06e111e2d2fae26a0f2530c366afa68a19d402841",
+      "integrated_sha256": "b7fab53c578e4cfdeb435c770f108bf2c7d3d9b5c610effcd5150490ed8f1681",
+      "modified_during_integration": true
+    },
+    "experiments/swin_tiny/inference.py": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "inference.py",
+      "sha256": "6c52c9edce889ba0958cd50a9e05d020d5c25280fc2629f452fb272ac545ce78",
+      "integrated_sha256": "04a511d46a26ed419e2f8fc2fdfaf6b4e82b48ba3b6ead5b75206f565a39f133",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/mobilenet_retrain.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mobilenet_retrain.py",
+      "sha256": "dc94c77b372d5631838b32b08f3cd4c244aaa3c52092e5533a439505a4b40ed6",
+      "integrated_sha256": "a71bc4be98111899db1e4a9844930b89178bdeece588205ecfac9e4c5a1ad206",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/train_all_layers.sh": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "train_all_layers.sh",
+      "sha256": "529e4d24e78295ef9c3da5b132e9b493da4a1a64f0ba17e5cde37c2f8b317997",
+      "integrated_sha256": "73e0016c1509161ba2c5de4410cdd47b1da6716581133fc585fc36b48bcff2fa",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/test_comb.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "test_comb.py",
+      "sha256": "b102e215899692fdf1dd3a677f34c7fade3e7c6d239465380735f9922f0be8e9",
+      "integrated_sha256": "a54a9056332f49d32a3e53f8e5478a4f5f0518afb096517ec6220cb7f830522b",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/eval_ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "eval_ssd.py",
+      "sha256": "e78591c7452a5e03404907eed1bcaa9f19cf168433039b70a9571df4ec09ac51",
+      "integrated_sha256": "8a6e8622e52ffc72272c26bccad309dcd71ea133152c578cf43c63a952dbdcb2",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/mb2_analysis.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2_analysis.py",
+      "sha256": "37e6b0c42e5ec7e6a9862428327cd161df26893ddb36cf8274dedd8b6f56e939",
+      "integrated_sha256": "69dd5e958c37e137f79bdb4855e99d3eb7e7194c1b92a70d742a526189681c62",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/mobilenet_conversion.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mobilenet_conversion.py",
+      "sha256": "8c9a8a286394657096c48a9ada679c897927a0c396527c9f76d992ca561ec617",
+      "integrated_sha256": "18802d55b6a46d4a949d37c343145a170135b16bdc13e15d48d068da76a928a9",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/train_ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "train_ssd.py",
+      "sha256": "2fd09601de395e8ae8f8ad450c566482f9de06a4044de67583577acfe206e423",
+      "integrated_sha256": "096c928bf82bb2c2a3f7fa7b282bb6287386a6d0088f3bdcb60381267b3f7af6",
+      "modified_during_integration": true
+    },
+    "experiments/resnet50/resnet50_retrain.py": {
+      "repository": "layer_version_retrain",
+      "branch": "master",
+      "commit": "da568c3c90e9263bec72aa4a3f557cc12b7b5cc1",
+      "path": "resnet50_retrain.py",
+      "sha256": "8062f2465db78b96c4e3008b6741e8be8225211c0988b12e48b4530f9413f3de",
+      "integrated_sha256": "79b9b090583ef7f954ca486320d0acd831e3165330f05b88117ab0bed3e85158",
+      "modified_during_integration": true
+    },
+    "experiments/resnet50/test_comb.py": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "test_comb.py",
+      "sha256": "4d117e9c6ee08e3c68cc44d2ad19e4462875bf022209015ba5448000407f2e1d",
+      "integrated_sha256": "9749b0c5ece5df3c2225152f9afa1418e9927c92053dca18732e0bdc6f82fa51",
+      "modified_during_integration": true
+    },
+    "experiments/resnet50/resnet50_analysis.py": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "resnet50_analysis.py",
+      "sha256": "ca6f65671f1aa40a370fc2451cccc14093c8b9d0320fc92dc262cfdcbb10086d",
+      "integrated_sha256": "ddc0f4c24468a0f5b187aacbd4e83689c19221a6662271063b4ec66a280a1a58",
+      "modified_during_integration": true
+    },
+    "experiments/mobilenetv2_ssd/profiling_layer.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "utils/layer_versioning/models/D2SConvS2D.py",
+      "sha256": "f59cdcbde563688ad5bfb6fbd38cdbbd9d2de3cae519ea2b8e3353256849aedc",
+      "integrated_sha256": "f59cdcbde563688ad5bfb6fbd38cdbbd9d2de3cae519ea2b8e3353256849aedc",
+      "modified_during_integration": false
+    },
+    "vision/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "vision/nn/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "vision/nn/alexnet.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/alexnet.py",
+      "sha256": "5cb4e0e98f17c77c85727d38cfd61297504322b8f649dcb71857b6b97c6fb8e6",
+      "integrated_sha256": "5cb4e0e98f17c77c85727d38cfd61297504322b8f649dcb71857b6b97c6fb8e6",
+      "modified_during_integration": false
+    },
+    "vision/nn/mobilenet.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/mobilenet.py",
+      "sha256": "72b5456f0a1e03d21f3434e2a82b9760fff9428650a894872d69b73cd0eed192",
+      "integrated_sha256": "72b5456f0a1e03d21f3434e2a82b9760fff9428650a894872d69b73cd0eed192",
+      "modified_during_integration": false
+    },
+    "vision/nn/mobilenet_v2.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/mobilenet_v2.py",
+      "sha256": "e84fa33a9cd30c9a06c52f5b83491d9921d3564f7e00d45537e41fc2d4a0515c",
+      "integrated_sha256": "e84fa33a9cd30c9a06c52f5b83491d9921d3564f7e00d45537e41fc2d4a0515c",
+      "modified_during_integration": false
+    },
+    "vision/nn/mobilenetv3.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/mobilenetv3.py",
+      "sha256": "53b92cdc5f132c1ce595935feadde83a4b95cb504cb26ad819bf43ff883d91cf",
+      "integrated_sha256": "53b92cdc5f132c1ce595935feadde83a4b95cb504cb26ad819bf43ff883d91cf",
+      "modified_during_integration": false
+    },
+    "vision/nn/multibox_loss.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/multibox_loss.py",
+      "sha256": "80be792b9c23c4f3635f8cff1e62e4eb3ba4a722b0769e7d757c20a64d4ea12c",
+      "integrated_sha256": "80be792b9c23c4f3635f8cff1e62e4eb3ba4a722b0769e7d757c20a64d4ea12c",
+      "modified_during_integration": false
+    },
+    "vision/nn/scaled_l2_norm.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/scaled_l2_norm.py",
+      "sha256": "2fa3bf7c05f5fe10990696571b4838591c7ae7d1fd0f4d4725255b9b234feb5b",
+      "integrated_sha256": "2fa3bf7c05f5fe10990696571b4838591c7ae7d1fd0f4d4725255b9b234feb5b",
+      "modified_during_integration": false
+    },
+    "vision/nn/squeezenet.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/squeezenet.py",
+      "sha256": "f369ecad09f83e3a614e888ac956a4f61012facef6475f5f06f4f396f18c20b6",
+      "integrated_sha256": "f369ecad09f83e3a614e888ac956a4f61012facef6475f5f06f4f396f18c20b6",
+      "modified_during_integration": false
+    },
+    "vision/nn/vgg.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/nn/vgg.py",
+      "sha256": "4ac08e6f73fdaaf94a1166bea0c48a72a23d824cf3a9e62afd886e1f53d3134b",
+      "integrated_sha256": "4ac08e6f73fdaaf94a1166bea0c48a72a23d824cf3a9e62afd886e1f53d3134b",
+      "modified_during_integration": false
+    },
+    "vision/ssd/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "vision/ssd/config/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/config/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "vision/ssd/config/mobilenetv1_ssd_config.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/config/mobilenetv1_ssd_config.py",
+      "sha256": "ec0e0bbe8dd30e4f5e30b8685f12a6dcb4f41ea49343affaf5d65e51b1cf11b8",
+      "integrated_sha256": "ec0e0bbe8dd30e4f5e30b8685f12a6dcb4f41ea49343affaf5d65e51b1cf11b8",
+      "modified_during_integration": false
+    },
+    "vision/ssd/config/squeezenet_ssd_config.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/config/squeezenet_ssd_config.py",
+      "sha256": "58bb02fcacaba24d516d1da3276eedc4db5dc6e0470d116d837c6f28818b18e7",
+      "integrated_sha256": "58bb02fcacaba24d516d1da3276eedc4db5dc6e0470d116d837c6f28818b18e7",
+      "modified_during_integration": false
+    },
+    "vision/ssd/config/vgg_ssd_config.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/config/vgg_ssd_config.py",
+      "sha256": "5321a8b5ee81b2cf3a098624f227e2ee38ff8e9a638889669d0afd7e081b0b41",
+      "integrated_sha256": "5321a8b5ee81b2cf3a098624f227e2ee38ff8e9a638889669d0afd7e081b0b41",
+      "modified_during_integration": false
+    },
+    "vision/ssd/data_preprocessing.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/data_preprocessing.py",
+      "sha256": "318c23e764919c14da8a7204df04f1fb99060342f854feffc21f505ec72c55a5",
+      "integrated_sha256": "318c23e764919c14da8a7204df04f1fb99060342f854feffc21f505ec72c55a5",
+      "modified_during_integration": false
+    },
+    "vision/ssd/fpn_mobilenetv1_ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/fpn_mobilenetv1_ssd.py",
+      "sha256": "217e92dd796d31007983320af1708419d8889c4e7b0ba3304cbb6f3446aaaa35",
+      "integrated_sha256": "217e92dd796d31007983320af1708419d8889c4e7b0ba3304cbb6f3446aaaa35",
+      "modified_during_integration": false
+    },
+    "vision/ssd/fpn_ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/fpn_ssd.py",
+      "sha256": "894d7981cc8bcee99c0b5e2cb1cd8eebee0ccf7e080bd9bd2314d4fb5ad978a2",
+      "integrated_sha256": "894d7981cc8bcee99c0b5e2cb1cd8eebee0ccf7e080bd9bd2314d4fb5ad978a2",
+      "modified_during_integration": false
+    },
+    "vision/ssd/mobilenet_v2_ssd_lite.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/mobilenet_v2_ssd_lite.py",
+      "sha256": "f02122e51ca0b45c459a87359a1cc0fcf6525aa62f083f880015053b001392ea",
+      "integrated_sha256": "f02122e51ca0b45c459a87359a1cc0fcf6525aa62f083f880015053b001392ea",
+      "modified_during_integration": false
+    },
+    "vision/ssd/mobilenetv1_ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/mobilenetv1_ssd.py",
+      "sha256": "f60a59094e89049f95f1bec07846229832edeb269ee35509c7a81910392ceee5",
+      "integrated_sha256": "f60a59094e89049f95f1bec07846229832edeb269ee35509c7a81910392ceee5",
+      "modified_during_integration": false
+    },
+    "vision/ssd/mobilenetv1_ssd_lite.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/mobilenetv1_ssd_lite.py",
+      "sha256": "2270ab606e54af60ffdeb0ce061da542d65913911ca9eeeb09de7a8528bc7a57",
+      "integrated_sha256": "2270ab606e54af60ffdeb0ce061da542d65913911ca9eeeb09de7a8528bc7a57",
+      "modified_during_integration": false
+    },
+    "vision/ssd/mobilenetv3_ssd_lite.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/mobilenetv3_ssd_lite.py",
+      "sha256": "113fe9e718df110d0574fd8b6c01ace3b29f9285b36d0f27c4714a3f5d75ea03",
+      "integrated_sha256": "113fe9e718df110d0574fd8b6c01ace3b29f9285b36d0f27c4714a3f5d75ea03",
+      "modified_during_integration": false
+    },
+    "vision/ssd/predictor.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/predictor.py",
+      "sha256": "5f7facc6ae393969903a1f9003962ca52d79258fda82c9d27ec9b3f332e0b96a",
+      "integrated_sha256": "5f7facc6ae393969903a1f9003962ca52d79258fda82c9d27ec9b3f332e0b96a",
+      "modified_during_integration": false
+    },
+    "vision/ssd/squeezenet_ssd_lite.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/squeezenet_ssd_lite.py",
+      "sha256": "a73c363c8d502e49e067394fcdc21ebcf31558d7e41a1d44f18fba3e0e1fde1b",
+      "integrated_sha256": "a73c363c8d502e49e067394fcdc21ebcf31558d7e41a1d44f18fba3e0e1fde1b",
+      "modified_during_integration": false
+    },
+    "vision/ssd/ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/ssd.py",
+      "sha256": "c7584d1cd56512149974e19415cfddd5c63dfe1ff04e11ae2c5181c9c6820fd1",
+      "integrated_sha256": "c7584d1cd56512149974e19415cfddd5c63dfe1ff04e11ae2c5181c9c6820fd1",
+      "modified_during_integration": false
+    },
+    "vision/ssd/vgg_ssd.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/ssd/vgg_ssd.py",
+      "sha256": "a47fffe5dc428a42787fa27e667d2587fbcd2b7941f17ef555ae7c2b7bf6e71e",
+      "integrated_sha256": "a47fffe5dc428a42787fa27e667d2587fbcd2b7941f17ef555ae7c2b7bf6e71e",
+      "modified_during_integration": false
+    },
+    "vision/transforms/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/transforms/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "vision/transforms/transforms.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/transforms/transforms.py",
+      "sha256": "058a4716c8a2526d3e04cfbbb583adfe9b6e114f9fc329897a364a0699e45165",
+      "integrated_sha256": "058a4716c8a2526d3e04cfbbb583adfe9b6e114f9fc329897a364a0699e45165",
+      "modified_during_integration": false
+    },
+    "vision/utils/__init__.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/utils/__init__.py",
+      "sha256": "2d44be8c6ad7945e5e7427cb45a105548bfdfa4da3eb4f6d1df8cf7fa94149da",
+      "integrated_sha256": "2d44be8c6ad7945e5e7427cb45a105548bfdfa4da3eb4f6d1df8cf7fa94149da",
+      "modified_during_integration": false
+    },
+    "vision/utils/box_utils.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/utils/box_utils.py",
+      "sha256": "11f1ad2e573e8f2cebf45145e0e0cca68b4bb6e02ad347c72b7fa25ef4b0441d",
+      "integrated_sha256": "11f1ad2e573e8f2cebf45145e0e0cca68b4bb6e02ad347c72b7fa25ef4b0441d",
+      "modified_during_integration": false
+    },
+    "vision/utils/box_utils_numpy.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/utils/box_utils_numpy.py",
+      "sha256": "6d607ca8656dd13c14e07d9234d5b2befb5c6cb2819ea21201e4cc15e37f8a86",
+      "integrated_sha256": "6d607ca8656dd13c14e07d9234d5b2befb5c6cb2819ea21201e4cc15e37f8a86",
+      "modified_during_integration": false
+    },
+    "vision/utils/measurements.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/utils/measurements.py",
+      "sha256": "77f02b49fb5558780263bd62e475ee845f996802278a4505653874fc9954f83d",
+      "integrated_sha256": "77f02b49fb5558780263bd62e475ee845f996802278a4505653874fc9954f83d",
+      "modified_during_integration": false
+    },
+    "vision/utils/misc.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/utils/misc.py",
+      "sha256": "92b95939bd676f8f880051cddea09d4444bb0fbc8f675b3127520b889571fc4a",
+      "integrated_sha256": "92b95939bd676f8f880051cddea09d4444bb0fbc8f675b3127520b889571fc4a",
+      "modified_during_integration": false
+    },
+    "vision/utils/model_book.py": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "vision/utils/model_book.py",
+      "sha256": "bc87403cafe3b06068f2e88be4efdf90b06c18e1ce4a356ab093a79130bd5db7",
+      "integrated_sha256": "bc87403cafe3b06068f2e88be4efdf90b06c18e1ce4a356ab093a79130bd5db7",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/voc-model-labels.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "models/voc-model-labels.txt",
+      "sha256": "6a86b607f736e7d4aa91c6db566f4868c9f09222e545fc0f50cf9eede9351703",
+      "integrated_sha256": "6a86b607f736e7d4aa91c6db566f4868c9f09222e545fc0f50cf9eede9351703",
+      "modified_during_integration": false
+    },
+    "vision/datasets/__init__.py": {
+      "repository": "https://github.com/noiper/pytorch-ssd",
+      "branch": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "commit": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "path": "vision/datasets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "integrated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_during_integration": false
+    },
+    "vision/datasets/voc_dataset.py": {
+      "repository": "https://github.com/noiper/pytorch-ssd",
+      "branch": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "commit": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "path": "vision/datasets/voc_dataset.py",
+      "sha256": "a0bb57ad1ccaa32849b01e7c54386bac956a41240f815362c689750e1ba3a4f3",
+      "integrated_sha256": "a0bb57ad1ccaa32849b01e7c54386bac956a41240f815362c689750e1ba3a4f3",
+      "modified_during_integration": false
+    },
+    "vision/datasets/open_images.py": {
+      "repository": "https://github.com/noiper/pytorch-ssd",
+      "branch": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "commit": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "path": "vision/datasets/open_images.py",
+      "sha256": "721f1ab6f8daff2171bec1a5c979cfd7010866261dc24786396d9f884ca31faa",
+      "integrated_sha256": "721f1ab6f8daff2171bec1a5c979cfd7010866261dc24786396d9f884ca31faa",
+      "modified_during_integration": false
+    },
+    "vision/LICENSE": {
+      "repository": "https://github.com/noiper/pytorch-ssd",
+      "branch": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "commit": "7a839cbc8c3fb39679856b4dc42a1ab19ec07581",
+      "path": "LICENSE",
+      "sha256": "a97fde1118a28bc1e2589f307a3765b55d9b9246fc0e278d34e78a15d8ebe4e9",
+      "integrated_sha256": "a97fde1118a28bc1e2589f307a3765b55d9b9246fc0e278d34e78a15d8ebe4e9",
+      "modified_during_integration": false
+    },
+    "results/paper/vgg11/vgg11_combination_results.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_combination_results.txt",
+      "sha256": "0acfaad39f724dbd74733e27062415396c77561a58d4ed7cedf001907826fbf5",
+      "integrated_sha256": "0acfaad39f724dbd74733e27062415396c77561a58d4ed7cedf001907826fbf5",
+      "modified_during_integration": false
+    },
+    "results/paper/inceptionv3/inceptionv3_combination_results.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_combination_results.txt",
+      "sha256": "2fcd4d64a2466f7e753fded658cbcdc9ae62294aeeb766b0269892cbad750cbf",
+      "integrated_sha256": "2fcd4d64a2466f7e753fded658cbcdc9ae62294aeeb766b0269892cbad750cbf",
+      "modified_during_integration": false
+    },
+    "results/paper/resnet50/resnet50_combination_results.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "resnet50_combination_results.txt",
+      "sha256": "c7816f14ae8e2846045b58e68e3fb4321b7fa052090458402439d8964a2f55a2",
+      "integrated_sha256": "c7816f14ae8e2846045b58e68e3fb4321b7fa052090458402439d8964a2f55a2",
+      "modified_during_integration": false
+    },
+    "results/paper/swin_tiny/combination_results.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "combination_results.txt",
+      "sha256": "a8180896a4e84f6d92cdce329602aa363a142556ec62050fc75de14951ec7791",
+      "integrated_sha256": "a8180896a4e84f6d92cdce329602aa363a142556ec62050fc75de14951ec7791",
+      "modified_during_integration": false
+    },
+    "results/paper/mobilenetv2_ssd/mb2ssd_combination_map_results.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2ssd_combination_map_results.txt",
+      "sha256": "f9641d71451e0229a5d0f1afb986b8e9ae4e3ff69546ed373b9d2d351889da0c",
+      "integrated_sha256": "f9641d71451e0229a5d0f1afb986b8e9ae4e3ff69546ed373b9d2d351889da0c",
+      "modified_during_integration": false
+    },
+    "results/paper/sp2dense/layer_combination_results_20250822_101224.csv": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "third_party/XR/sparse-to-dense/comb_example/layer_combination_results_20250822_101224.csv",
+      "sha256": "7c261c1765b3da3bd35f940ed25ef5c830d4135a66175decb9c1dab8758e1eaf",
+      "integrated_sha256": "7c261c1765b3da3bd35f940ed25ef5c830d4135a66175decb9c1dab8758e1eaf",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11.m",
+      "sha256": "abd3de0fb1f302c6332639a624f8cc66aaf15e170bbe17a6ac6d5b2a6d4698bc",
+      "integrated_sha256": "abd3de0fb1f302c6332639a624f8cc66aaf15e170bbe17a6ac6d5b2a6d4698bc",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_0.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_0.m",
+      "sha256": "3287e0a17329c68eb1483fa31e8645da542a7589452781ae365f6c6d46c08de6",
+      "integrated_sha256": "3287e0a17329c68eb1483fa31e8645da542a7589452781ae365f6c6d46c08de6",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_0layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_0layers.txt",
+      "sha256": "555c97f6ee9ef573286e4fa6f9316b9981a48dc0d18cb2790afce11ef652457e",
+      "integrated_sha256": "555c97f6ee9ef573286e4fa6f9316b9981a48dc0d18cb2790afce11ef652457e",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_1.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_1.m",
+      "sha256": "035063e7e20d026843ebc3c4b8e2d6537e121fb94b47859a6a664940ce41eaeb",
+      "integrated_sha256": "035063e7e20d026843ebc3c4b8e2d6537e121fb94b47859a6a664940ce41eaeb",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_1layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_1layers.txt",
+      "sha256": "77618cc6a52f6dc41ea046054d1a3a3139a2f01095d0d1685a59338b36b4a559",
+      "integrated_sha256": "77618cc6a52f6dc41ea046054d1a3a3139a2f01095d0d1685a59338b36b4a559",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_2.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_2.m",
+      "sha256": "3604fbf112fc29ba8be0868523c00fd8045460e6196142ae3557ecc50fdf9c36",
+      "integrated_sha256": "3604fbf112fc29ba8be0868523c00fd8045460e6196142ae3557ecc50fdf9c36",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_2layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_2layers.txt",
+      "sha256": "fdebeb6d0459f3537c02dc5c07a84f6e14e51533ff98440fd60782e1477e9170",
+      "integrated_sha256": "fdebeb6d0459f3537c02dc5c07a84f6e14e51533ff98440fd60782e1477e9170",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_4.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_4.m",
+      "sha256": "9428688fdb3168ef55d9f40c96367cbceddb09414880e68c796c4d898f0b01d2",
+      "integrated_sha256": "9428688fdb3168ef55d9f40c96367cbceddb09414880e68c796c4d898f0b01d2",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_4layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_4layers.txt",
+      "sha256": "9c7de99e81f37bbf0f4cf8f30d9908629b80c7a5cbb49a823b1816edb49f02eb",
+      "integrated_sha256": "9c7de99e81f37bbf0f4cf8f30d9908629b80c7a5cbb49a823b1816edb49f02eb",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx0_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx0_trained_imagenet.m",
+      "sha256": "3287e0a17329c68eb1483fa31e8645da542a7589452781ae365f6c6d46c08de6",
+      "integrated_sha256": "3287e0a17329c68eb1483fa31e8645da542a7589452781ae365f6c6d46c08de6",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx0_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx0_trained_imagenet_layers.txt",
+      "sha256": "555c97f6ee9ef573286e4fa6f9316b9981a48dc0d18cb2790afce11ef652457e",
+      "integrated_sha256": "555c97f6ee9ef573286e4fa6f9316b9981a48dc0d18cb2790afce11ef652457e",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx1_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx1_trained_imagenet.m",
+      "sha256": "035063e7e20d026843ebc3c4b8e2d6537e121fb94b47859a6a664940ce41eaeb",
+      "integrated_sha256": "035063e7e20d026843ebc3c4b8e2d6537e121fb94b47859a6a664940ce41eaeb",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx1_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx1_trained_imagenet_layers.txt",
+      "sha256": "77618cc6a52f6dc41ea046054d1a3a3139a2f01095d0d1685a59338b36b4a559",
+      "integrated_sha256": "77618cc6a52f6dc41ea046054d1a3a3139a2f01095d0d1685a59338b36b4a559",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx2_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx2_trained_imagenet.m",
+      "sha256": "3604fbf112fc29ba8be0868523c00fd8045460e6196142ae3557ecc50fdf9c36",
+      "integrated_sha256": "3604fbf112fc29ba8be0868523c00fd8045460e6196142ae3557ecc50fdf9c36",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx2_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx2_trained_imagenet_layers.txt",
+      "sha256": "fdebeb6d0459f3537c02dc5c07a84f6e14e51533ff98440fd60782e1477e9170",
+      "integrated_sha256": "fdebeb6d0459f3537c02dc5c07a84f6e14e51533ff98440fd60782e1477e9170",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx3_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx3_trained_imagenet.m",
+      "sha256": "4d479d21afbcd9dad4e7ad2acf62ecf4b226c092f54c7bbecafae99c1dbb9b22",
+      "integrated_sha256": "4d479d21afbcd9dad4e7ad2acf62ecf4b226c092f54c7bbecafae99c1dbb9b22",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx3_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx3_trained_imagenet_layers.txt",
+      "sha256": "7d8604524b585e7db3ff287fbf5e0f4bd1efbd3579c64ed40eaffde1a3727a80",
+      "integrated_sha256": "7d8604524b585e7db3ff287fbf5e0f4bd1efbd3579c64ed40eaffde1a3727a80",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx4_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx4_trained_imagenet.m",
+      "sha256": "9428688fdb3168ef55d9f40c96367cbceddb09414880e68c796c4d898f0b01d2",
+      "integrated_sha256": "9428688fdb3168ef55d9f40c96367cbceddb09414880e68c796c4d898f0b01d2",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_idx4_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_idx4_trained_imagenet_layers.txt",
+      "sha256": "9c7de99e81f37bbf0f4cf8f30d9908629b80c7a5cbb49a823b1816edb49f02eb",
+      "integrated_sha256": "9c7de99e81f37bbf0f4cf8f30d9908629b80c7a5cbb49a823b1816edb49f02eb",
+      "modified_during_integration": false
+    },
+    "experiments/vgg11/exports/vgg11_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "vgg11_layers.txt",
+      "sha256": "b38617afb5581bf3b32a8ed65ee7e7aca3a19ea5bafa7de23ada55ad243ae9d8",
+      "integrated_sha256": "b38617afb5581bf3b32a8ed65ee7e7aca3a19ea5bafa7de23ada55ad243ae9d8",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3.m": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3.m",
+      "sha256": "cadfefba3bf76a3618f8868aa687d14de3121ac946ec5f50ddcf3c186b4cf5bc",
+      "integrated_sha256": "cadfefba3bf76a3618f8868aa687d14de3121ac946ec5f50ddcf3c186b4cf5bc",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_0.m": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_0.m",
+      "sha256": "bdcfd62993ff8d91cd2f874243098b4e4465538204e33e6e8bf17f1f213c0b05",
+      "integrated_sha256": "bdcfd62993ff8d91cd2f874243098b4e4465538204e33e6e8bf17f1f213c0b05",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_0layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_0layers.txt",
+      "sha256": "7107e3342ca722f583521d80cf92d3e405ef2e57fae383b247adc26985c82242",
+      "integrated_sha256": "7107e3342ca722f583521d80cf92d3e405ef2e57fae383b247adc26985c82242",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_idx0_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_idx0_trained_imagenet.m",
+      "sha256": "745f0093f05edb636ae76b38ce4882c7cea2b5b9b0bd0b9cbf7de9a62de67984",
+      "integrated_sha256": "745f0093f05edb636ae76b38ce4882c7cea2b5b9b0bd0b9cbf7de9a62de67984",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_idx0_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_idx0_trained_imagenet_layers.txt",
+      "sha256": "e90105d9bdd7aee63b7c4a4c347be030fe75064b37d6d7b13868eec4600e3287",
+      "integrated_sha256": "e90105d9bdd7aee63b7c4a4c347be030fe75064b37d6d7b13868eec4600e3287",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_idx1_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_idx1_trained_imagenet.m",
+      "sha256": "bdcfd62993ff8d91cd2f874243098b4e4465538204e33e6e8bf17f1f213c0b05",
+      "integrated_sha256": "bdcfd62993ff8d91cd2f874243098b4e4465538204e33e6e8bf17f1f213c0b05",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_idx1_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_idx1_trained_imagenet_layers.txt",
+      "sha256": "7107e3342ca722f583521d80cf92d3e405ef2e57fae383b247adc26985c82242",
+      "integrated_sha256": "7107e3342ca722f583521d80cf92d3e405ef2e57fae383b247adc26985c82242",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_idx2_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_idx2_trained_imagenet.m",
+      "sha256": "f61846aecd6540b31e793da80740a8d4493af8c03662fb674038106b775c74f5",
+      "integrated_sha256": "f61846aecd6540b31e793da80740a8d4493af8c03662fb674038106b775c74f5",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_idx2_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_idx2_trained_imagenet_layers.txt",
+      "sha256": "ef52b526365969188018bb3b951f2671363f521257d9053c363397764439bfbf",
+      "integrated_sha256": "ef52b526365969188018bb3b951f2671363f521257d9053c363397764439bfbf",
+      "modified_during_integration": false
+    },
+    "experiments/inceptionv3/exports/inceptionv3_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "inception_retrain",
+      "commit": "568f00f9157e97c9547e50c746c68e30789ff060",
+      "path": "inceptionv3_layers.txt",
+      "sha256": "46db3db5660a1511c074918c77001270f20ae585060c19f2bec851c5e7fd7059",
+      "integrated_sha256": "46db3db5660a1511c074918c77001270f20ae585060c19f2bec851c5e7fd7059",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny.m",
+      "sha256": "0bf2aae63a8cbe148cf283fd79c1424d0e8281cde20f937b35e8843af668b522",
+      "integrated_sha256": "0bf2aae63a8cbe148cf283fd79c1424d0e8281cde20f937b35e8843af668b522",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_0.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_0.m",
+      "sha256": "e0282fe94efd089542d25583f08782cf200ce4269fc57735e28abaf9ae5c3dae",
+      "integrated_sha256": "e0282fe94efd089542d25583f08782cf200ce4269fc57735e28abaf9ae5c3dae",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_0_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_0_layers.txt",
+      "sha256": "cd4fc382a018509973b35348633a8226632b956ca7fbb6042aa54c3792bf87e9",
+      "integrated_sha256": "cd4fc382a018509973b35348633a8226632b956ca7fbb6042aa54c3792bf87e9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_1.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_1.m",
+      "sha256": "a88b70e6dae5ada1d31309c0287ec376adf5d3231614bd1c8d6b80683f13168b",
+      "integrated_sha256": "a88b70e6dae5ada1d31309c0287ec376adf5d3231614bd1c8d6b80683f13168b",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_1_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_1_layers.txt",
+      "sha256": "a334ffb838c9c46fb0b69d8f4946ba5e7cd39d80f21cb6d3b95ffc3a4a65f3fb",
+      "integrated_sha256": "a334ffb838c9c46fb0b69d8f4946ba5e7cd39d80f21cb6d3b95ffc3a4a65f3fb",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_2.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_2.m",
+      "sha256": "747d9969420a7a22d733af13f7f6c9d0b06d3568d25eef0382f32d219c3c12a1",
+      "integrated_sha256": "747d9969420a7a22d733af13f7f6c9d0b06d3568d25eef0382f32d219c3c12a1",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_2_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_2_layers.txt",
+      "sha256": "bf8ac5ad26759e52ceca8c09cbfc6ef4e8df1eefa2ebb9642ea0d47097797f6f",
+      "integrated_sha256": "bf8ac5ad26759e52ceca8c09cbfc6ef4e8df1eefa2ebb9642ea0d47097797f6f",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_3.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_3.m",
+      "sha256": "51a85fcc9418368b39f75a0050be0aa6215bba2d5d817ee76cf81e6ef7dcfb4c",
+      "integrated_sha256": "51a85fcc9418368b39f75a0050be0aa6215bba2d5d817ee76cf81e6ef7dcfb4c",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_3_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_3_layers.txt",
+      "sha256": "b0c19582f55bf0b1658f46e11fb26f919e77baa93608dd9f0c700999b5f85636",
+      "integrated_sha256": "b0c19582f55bf0b1658f46e11fb26f919e77baa93608dd9f0c700999b5f85636",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx0.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx0.m",
+      "sha256": "8012c6e686b9ce112b0637f61d226267ab26ae0a98c49127a2b214106c4783a9",
+      "integrated_sha256": "8012c6e686b9ce112b0637f61d226267ab26ae0a98c49127a2b214106c4783a9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx0_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx0_layers.txt",
+      "sha256": "0389cd37b68d1b0b8e5f665b3e0b1593c3b10aee5f626456dc9a9a19272c283e",
+      "integrated_sha256": "0389cd37b68d1b0b8e5f665b3e0b1593c3b10aee5f626456dc9a9a19272c283e",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx0_trained.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx0_trained.m",
+      "sha256": "8012c6e686b9ce112b0637f61d226267ab26ae0a98c49127a2b214106c4783a9",
+      "integrated_sha256": "8012c6e686b9ce112b0637f61d226267ab26ae0a98c49127a2b214106c4783a9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx0_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx0_trained_imagenet.m",
+      "sha256": "8012c6e686b9ce112b0637f61d226267ab26ae0a98c49127a2b214106c4783a9",
+      "integrated_sha256": "8012c6e686b9ce112b0637f61d226267ab26ae0a98c49127a2b214106c4783a9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx0_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx0_trained_imagenet_layers.txt",
+      "sha256": "0389cd37b68d1b0b8e5f665b3e0b1593c3b10aee5f626456dc9a9a19272c283e",
+      "integrated_sha256": "0389cd37b68d1b0b8e5f665b3e0b1593c3b10aee5f626456dc9a9a19272c283e",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx0_trained_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx0_trained_layers.txt",
+      "sha256": "0389cd37b68d1b0b8e5f665b3e0b1593c3b10aee5f626456dc9a9a19272c283e",
+      "integrated_sha256": "0389cd37b68d1b0b8e5f665b3e0b1593c3b10aee5f626456dc9a9a19272c283e",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx1.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx1.m",
+      "sha256": "ca16f36accc6266cd2bf58d0a5e4b0f0f64f8b4b7784428b87c848ed24659fb7",
+      "integrated_sha256": "ca16f36accc6266cd2bf58d0a5e4b0f0f64f8b4b7784428b87c848ed24659fb7",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx1_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx1_layers.txt",
+      "sha256": "6ef48c5b507418b3f47cd9c5bccf08dda57eb12fe1f185b0bb8732e093417052",
+      "integrated_sha256": "6ef48c5b507418b3f47cd9c5bccf08dda57eb12fe1f185b0bb8732e093417052",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx1_trained.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx1_trained.m",
+      "sha256": "ca16f36accc6266cd2bf58d0a5e4b0f0f64f8b4b7784428b87c848ed24659fb7",
+      "integrated_sha256": "ca16f36accc6266cd2bf58d0a5e4b0f0f64f8b4b7784428b87c848ed24659fb7",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx1_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx1_trained_imagenet.m",
+      "sha256": "ca16f36accc6266cd2bf58d0a5e4b0f0f64f8b4b7784428b87c848ed24659fb7",
+      "integrated_sha256": "ca16f36accc6266cd2bf58d0a5e4b0f0f64f8b4b7784428b87c848ed24659fb7",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx1_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx1_trained_imagenet_layers.txt",
+      "sha256": "6ef48c5b507418b3f47cd9c5bccf08dda57eb12fe1f185b0bb8732e093417052",
+      "integrated_sha256": "6ef48c5b507418b3f47cd9c5bccf08dda57eb12fe1f185b0bb8732e093417052",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx1_trained_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx1_trained_layers.txt",
+      "sha256": "6ef48c5b507418b3f47cd9c5bccf08dda57eb12fe1f185b0bb8732e093417052",
+      "integrated_sha256": "6ef48c5b507418b3f47cd9c5bccf08dda57eb12fe1f185b0bb8732e093417052",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx2.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx2.m",
+      "sha256": "d247e446d6a6a019a6dcef3de6e616b989367c9bd8a649c3d8d96d35e854f94d",
+      "integrated_sha256": "d247e446d6a6a019a6dcef3de6e616b989367c9bd8a649c3d8d96d35e854f94d",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx2_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx2_layers.txt",
+      "sha256": "fe2b0ceb48ec6aed7b208775d05058751b04a6c88369fee1e91a72cb6dd8b979",
+      "integrated_sha256": "fe2b0ceb48ec6aed7b208775d05058751b04a6c88369fee1e91a72cb6dd8b979",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx2_trained.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx2_trained.m",
+      "sha256": "d247e446d6a6a019a6dcef3de6e616b989367c9bd8a649c3d8d96d35e854f94d",
+      "integrated_sha256": "d247e446d6a6a019a6dcef3de6e616b989367c9bd8a649c3d8d96d35e854f94d",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx2_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx2_trained_imagenet.m",
+      "sha256": "d247e446d6a6a019a6dcef3de6e616b989367c9bd8a649c3d8d96d35e854f94d",
+      "integrated_sha256": "d247e446d6a6a019a6dcef3de6e616b989367c9bd8a649c3d8d96d35e854f94d",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx2_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx2_trained_imagenet_layers.txt",
+      "sha256": "fe2b0ceb48ec6aed7b208775d05058751b04a6c88369fee1e91a72cb6dd8b979",
+      "integrated_sha256": "fe2b0ceb48ec6aed7b208775d05058751b04a6c88369fee1e91a72cb6dd8b979",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx2_trained_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx2_trained_layers.txt",
+      "sha256": "fe2b0ceb48ec6aed7b208775d05058751b04a6c88369fee1e91a72cb6dd8b979",
+      "integrated_sha256": "fe2b0ceb48ec6aed7b208775d05058751b04a6c88369fee1e91a72cb6dd8b979",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx3.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx3.m",
+      "sha256": "a25a39e970009872aa8b8d621465f43096ad70fc53e9074396378d3c336fd8a9",
+      "integrated_sha256": "a25a39e970009872aa8b8d621465f43096ad70fc53e9074396378d3c336fd8a9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx3_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx3_layers.txt",
+      "sha256": "497566d6a9dfa0ceb92c466b949e5c87f45c915e3ad193cf599bd35b85b26a96",
+      "integrated_sha256": "497566d6a9dfa0ceb92c466b949e5c87f45c915e3ad193cf599bd35b85b26a96",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx3_trained.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx3_trained.m",
+      "sha256": "a25a39e970009872aa8b8d621465f43096ad70fc53e9074396378d3c336fd8a9",
+      "integrated_sha256": "a25a39e970009872aa8b8d621465f43096ad70fc53e9074396378d3c336fd8a9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx3_trained_imagenet.m": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx3_trained_imagenet.m",
+      "sha256": "a25a39e970009872aa8b8d621465f43096ad70fc53e9074396378d3c336fd8a9",
+      "integrated_sha256": "a25a39e970009872aa8b8d621465f43096ad70fc53e9074396378d3c336fd8a9",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx3_trained_imagenet_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx3_trained_imagenet_layers.txt",
+      "sha256": "497566d6a9dfa0ceb92c466b949e5c87f45c915e3ad193cf599bd35b85b26a96",
+      "integrated_sha256": "497566d6a9dfa0ceb92c466b949e5c87f45c915e3ad193cf599bd35b85b26a96",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_idx3_trained_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_idx3_trained_layers.txt",
+      "sha256": "497566d6a9dfa0ceb92c466b949e5c87f45c915e3ad193cf599bd35b85b26a96",
+      "integrated_sha256": "497566d6a9dfa0ceb92c466b949e5c87f45c915e3ad193cf599bd35b85b26a96",
+      "modified_during_integration": false
+    },
+    "experiments/swin_tiny/exports/swin-tiny_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "swin_retrain",
+      "commit": "a5058c07f2fcc3817fcf929908df68fde9c33616",
+      "path": "swin-tiny_layers.txt",
+      "sha256": "fbb2c995092cd568d9c55c950b923483a69e1e0c8de47286e23236b8a5014566",
+      "integrated_sha256": "fbb2c995092cd568d9c55c950b923483a69e1e0c8de47286e23236b8a5014566",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite.m": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite.m",
+      "sha256": "c2e383b023482520aad0e5cdcf9a61b8dd3d2c675ecf9987e0a917a4cc689345",
+      "integrated_sha256": "c2e383b023482520aad0e5cdcf9a61b8dd3d2c675ecf9987e0a917a4cc689345",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_0.m": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_0.m",
+      "sha256": "8f5f8d4199a604c2d142ec5349d0b892fabe1fbecae90aa719c47c5a8a0a6f40",
+      "integrated_sha256": "8f5f8d4199a604c2d142ec5349d0b892fabe1fbecae90aa719c47c5a8a0a6f40",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_0_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_0_layers.txt",
+      "sha256": "22d3df63756b6044315f214a5629f0928081d4b5fe84df10951f37a3440fb1b0",
+      "integrated_sha256": "22d3df63756b6044315f214a5629f0928081d4b5fe84df10951f37a3440fb1b0",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_1.m": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_1.m",
+      "sha256": "9005910de86ed2df5e24a662eb3807c8a320e75d9060383b7716d657c3164ef3",
+      "integrated_sha256": "9005910de86ed2df5e24a662eb3807c8a320e75d9060383b7716d657c3164ef3",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_1_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_1_layers.txt",
+      "sha256": "ddd4b8bb71d85d1e92c6605bf843b09c08af03e9b23b0b52deb4b5935364d03e",
+      "integrated_sha256": "ddd4b8bb71d85d1e92c6605bf843b09c08af03e9b23b0b52deb4b5935364d03e",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_2.m": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_2.m",
+      "sha256": "fe1f1dc10dfdd439bd7cb5157ad0700a85de817435d7d21d30d1149612b7af2c",
+      "integrated_sha256": "fe1f1dc10dfdd439bd7cb5157ad0700a85de817435d7d21d30d1149612b7af2c",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_2_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_2_layers.txt",
+      "sha256": "32cd17b6eda61c573b94b30ef06c45372a74d6bd66bdc2f2f8c68ab3f2f89110",
+      "integrated_sha256": "32cd17b6eda61c573b94b30ef06c45372a74d6bd66bdc2f2f8c68ab3f2f89110",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_3.m": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_3.m",
+      "sha256": "5da2039e5f983188039480d08e6218a305728c865820f6460f1cb305df5aba15",
+      "integrated_sha256": "5da2039e5f983188039480d08e6218a305728c865820f6460f1cb305df5aba15",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_3_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_3_layers.txt",
+      "sha256": "80beb62604b57df19dc8df8555cb7df88469d3855db7a47ca2ddd18a3de2028c",
+      "integrated_sha256": "80beb62604b57df19dc8df8555cb7df88469d3855db7a47ca2ddd18a3de2028c",
+      "modified_during_integration": false
+    },
+    "experiments/mobilenetv2_ssd/exports/mb2-ssd-lite_layers.txt": {
+      "repository": "layer_version_retrain",
+      "branch": "mb2ssd_versioning",
+      "commit": "185b09b1fc51b7538e30a64c2b35b8c805ecfb37",
+      "path": "mb2-ssd-lite_layers.txt",
+      "sha256": "7326e39a5202fbe4950f9033918ac0a35d8272faa1f50a66f3d7f8cd7a9808b7",
+      "integrated_sha256": "7326e39a5202fbe4950f9033918ac0a35d8272faa1f50a66f3d7f8cd7a9808b7",
+      "modified_during_integration": false
+    },
+    "experiments/sp2dense/exports/sparse_to_dense_resnet18_upproj.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "third_party/XR/sparse-to-dense/sparse_to_dense_resnet18_upproj.m",
+      "sha256": "06dd912af7bb1c727f7ba9985168e79d58002d776ed3947c86c108605cc5a91c",
+      "integrated_sha256": "06dd912af7bb1c727f7ba9985168e79d58002d776ed3947c86c108605cc5a91c",
+      "modified_during_integration": false
+    },
+    "experiments/resnet50/exports/ResNet50.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/ResNet50.m",
+      "sha256": "24f22c1893ea8339f82dcc4e84547ee29bf787d2ee82fa6a5f9c31125d4972c5",
+      "integrated_sha256": "24f22c1893ea8339f82dcc4e84547ee29bf787d2ee82fa6a5f9c31125d4972c5",
+      "modified_during_integration": false
+    },
+    "experiments/resnet50/exports/generated_ResNet50.m": {
+      "repository": "layer_version_retrain",
+      "branch": "vgg_retrain",
+      "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
+      "path": "utils/layer_versioning/generated_ResNet50.m",
+      "sha256": "af62e365910ee8e84614dcd40be3f0b38ebc0a2cbd9d9cec17635a48b3984d0f",
+      "integrated_sha256": "af62e365910ee8e84614dcd40be3f0b38ebc0a2cbd9d9cec17635a48b3984d0f",
+      "modified_during_integration": false
+    }
+  },
+  "external_dependencies": {
+    "sp2dense": {
+      "repository": "https://github.com/fangchangma/sparse-to-dense.pytorch.git",
+      "tested_revision": "10efc6d60bddedd6f28f0532c108bb1d7ccdfc49",
+      "vendored": false,
+      "license": "No license file found at the tested revision; obtain applicable permission separately."
+    }
+  }
+}

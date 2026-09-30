@@ -1,0 +1,51 @@
+--- FINAL SSD COMBINATION mAP SUMMARY ---
+
+Model: Original Model (Baseline)
+  > Average Precision Across All Classes (mAP): 0.6860
+
+Model: Converted: idx0 (R=3)
+  > Average Precision Across All Classes (mAP): 0.5462
+
+Model: Converted: idx1 (R=2)
+  > Average Precision Across All Classes (mAP): 0.6840
+
+Model: Converted: idx2 (R=2)
+  > Average Precision Across All Classes (mAP): 0.6787
+
+Model: Converted: idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.6855
+
+Model: Converted: idx0 (R=3), idx1 (R=2)
+  > Average Precision Across All Classes (mAP): 0.2208
+
+Model: Converted: idx0 (R=3), idx2 (R=2)
+  > Average Precision Across All Classes (mAP): 0.3121
+
+Model: Converted: idx0 (R=3), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.5021
+
+Model: Converted: idx1 (R=2), idx2 (R=2)
+  > Average Precision Across All Classes (mAP): 0.2825
+
+Model: Converted: idx1 (R=2), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.4357
+
+Model: Converted: idx2 (R=2), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.4542
+
+Model: Converted: idx0 (R=3), idx1 (R=2), idx2 (R=2)
+  > Average Precision Across All Classes (mAP): 0.0429
+
+Model: Converted: idx0 (R=3), idx1 (R=2), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.1556
+
+Model: Converted: idx0 (R=3), idx2 (R=2), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.2497
+
+Model: Converted: idx1 (R=2), idx2 (R=2), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.2754
+
+Model: Converted: idx0 (R=3), idx1 (R=2), idx2 (R=2), idx3 (R=2)
+  > Average Precision Across All Classes (mAP): 0.0456
+
+======================================================================

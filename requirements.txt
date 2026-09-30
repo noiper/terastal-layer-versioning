@@ -1,0 +1,2 @@
+# From the repository root, install the shared package and all six experiments.
+-e .[all]

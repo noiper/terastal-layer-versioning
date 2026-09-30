@@ -1,0 +1,134 @@
+======================================================================
+--- FINAL VGG11 COMBINATION ANALYSIS SUMMARY ---
+======================================================================
+
+Model: Original VGG11 (Baseline)
+  > Top-1 Accuracy: 69.02%
+  > Top-5 Accuracy: 88.63%
+
+Model: Converted: idx0
+  > Top-1 Accuracy: 61.79%
+  > Top-5 Accuracy: 83.91%
+
+Model: Converted: idx1
+  > Top-1 Accuracy: 58.85%
+  > Top-5 Accuracy: 82.43%
+
+Model: Converted: idx2
+  > Top-1 Accuracy: 51.55%
+  > Top-5 Accuracy: 77.76%
+
+Model: Converted: idx3
+  > Top-1 Accuracy: 57.42%
+  > Top-5 Accuracy: 81.94%
+
+Model: Converted: idx4
+  > Top-1 Accuracy: 45.99%
+  > Top-5 Accuracy: 73.59%
+
+Model: Converted: idx0, idx1
+  > Top-1 Accuracy: 35.68%
+  > Top-5 Accuracy: 61.60%
+
+Model: Converted: idx0, idx2
+  > Top-1 Accuracy: 40.25%
+  > Top-5 Accuracy: 67.01%
+
+Model: Converted: idx0, idx3
+  > Top-1 Accuracy: 50.82%
+  > Top-5 Accuracy: 76.35%
+
+Model: Converted: idx0, idx4
+  > Top-1 Accuracy: 28.71%
+  > Top-5 Accuracy: 52.90%
+
+Model: Converted: idx1, idx2
+  > Top-1 Accuracy: 23.23%
+  > Top-5 Accuracy: 47.78%
+
+Model: Converted: idx1, idx3
+  > Top-1 Accuracy: 41.11%
+  > Top-5 Accuracy: 69.04%
+
+Model: Converted: idx1, idx4
+  > Top-1 Accuracy: 23.05%
+  > Top-5 Accuracy: 47.26%
+
+Model: Converted: idx2, idx3
+  > Top-1 Accuracy: 30.31%
+  > Top-5 Accuracy: 57.85%
+
+Model: Converted: idx2, idx4
+  > Top-1 Accuracy: 20.23%
+  > Top-5 Accuracy: 44.36%
+
+Model: Converted: idx3, idx4
+  > Top-1 Accuracy: 5.68%
+  > Top-5 Accuracy: 16.86%
+
+Model: Converted: idx0, idx1, idx2
+  > Top-1 Accuracy: 4.69%
+  > Top-5 Accuracy: 12.34%
+
+Model: Converted: idx0, idx1, idx3
+  > Top-1 Accuracy: 25.97%
+  > Top-5 Accuracy: 49.76%
+
+Model: Converted: idx0, idx1, idx4
+  > Top-1 Accuracy: 2.56%
+  > Top-5 Accuracy: 8.68%
+
+Model: Converted: idx0, idx2, idx3
+  > Top-1 Accuracy: 21.76%
+  > Top-5 Accuracy: 45.27%
+
+Model: Converted: idx0, idx2, idx4
+  > Top-1 Accuracy: 7.84%
+  > Top-5 Accuracy: 21.55%
+
+Model: Converted: idx0, idx3, idx4
+  > Top-1 Accuracy: 3.31%
+  > Top-5 Accuracy: 10.66%
+
+Model: Converted: idx1, idx2, idx3
+  > Top-1 Accuracy: 10.55%
+  > Top-5 Accuracy: 27.53%
+
+Model: Converted: idx1, idx2, idx4
+  > Top-1 Accuracy: 4.10%
+  > Top-5 Accuracy: 12.56%
+
+Model: Converted: idx1, idx3, idx4
+  > Top-1 Accuracy: 1.14%
+  > Top-5 Accuracy: 4.54%
+
+Model: Converted: idx2, idx3, idx4
+  > Top-1 Accuracy: 1.11%
+  > Top-5 Accuracy: 4.19%
+
+Model: Converted: idx0, idx1, idx2, idx3
+  > Top-1 Accuracy: 1.65%
+  > Top-5 Accuracy: 5.47%
+
+Model: Converted: idx0, idx1, idx2, idx4
+  > Top-1 Accuracy: 1.13%
+  > Top-5 Accuracy: 3.64%
+
+Model: Converted: idx0, idx1, idx3, idx4
+  > Top-1 Accuracy: 0.51%
+  > Top-5 Accuracy: 2.94%
+
+Model: Converted: idx0, idx2, idx3, idx4
+  > Top-1 Accuracy: 0.54%
+  > Top-5 Accuracy: 2.86%
+
+Model: Converted: idx1, idx2, idx3, idx4
+  > Top-1 Accuracy: 0.36%
+  > Top-5 Accuracy: 2.05%
+
+Model: Converted: idx0, idx1, idx2, idx3, idx4
+  > Top-1 Accuracy: 0.24%
+  > Top-5 Accuracy: 1.00%
+
+======================================================================
+Combination analysis complete.
