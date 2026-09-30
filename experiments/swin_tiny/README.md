@@ -1,6 +1,6 @@
 # Swin-Tiny
 
-Source: `swin_retrain@a5058c0`. Install the `[swin]` or `[all]` dependency extra.
+Install the `[swin]` or `[all]` dependency extra.
 The upstream baseline is `microsoft/swin-tiny-patch4-window7-224`.
 Use `--model-name-or-path /path/to/local/model` to load a local Hugging Face
 checkpoint without downloading it.
@@ -20,11 +20,8 @@ imagenet/
   ILSVRC2012_devkit_t12/data/meta.mat
 ```
 
-Use an isolated run directory. Paths and generated filenames are relative to the
-current working directory; install the repository first so module invocation
-works from that directory. Training explicitly downloads upstream baseline
-weights if they are not already cached. Custom variant weights are not bundled.
-
+After installation, run commands from a separate output directory. Paths are
+relative to that directory. Baseline weights download if not cached.
 
 ```bash
 python -m experiments.swin_tiny.swin_retrain --local_imagenet_path /data/imagenet --epochs 5
@@ -34,5 +31,5 @@ python -m experiments.swin_tiny.swin_analysis --help
 
 Checkpoints: `swin-tiny_idx0_trained_imagenet.pth` through
 `swin-tiny_idx3_trained_imagenet.pth`. The evaluator writes
-`combination_results.txt` (16 combinations). It loads classifier weights from
-index 0 even for the baseline; this historical behavior is preserved.
+`combination_results.txt` (16 combinations). Training also updates the classifier;
+evaluation uses classifier weights from index 0, including for the baseline.

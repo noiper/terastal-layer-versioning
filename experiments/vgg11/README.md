@@ -1,7 +1,5 @@
 # VGG11
 
-Source: `vgg_retrain@1d2294c`.
-
 | Index | Layer |
 |---|---|
 | 0 | `features.8` |
@@ -23,30 +21,22 @@ imagenet/
   ILSVRC2012_devkit_t12/data/meta.mat
 ```
 
-Use an isolated run directory. Paths and generated filenames are relative to the
-current working directory; install the repository first so module invocation
-works from that directory. Training explicitly downloads upstream baseline
-weights if they are not already cached. Custom variant weights are not bundled.
-
+After installation, run commands from a separate output directory. Paths are
+relative to that directory. Baseline weights download if not cached.
 
 ```bash
-python -m experiments.vgg11.vgg_retrain --local_imagenet_path /data/imagenet --epochs 5
 python -m experiments.vgg11.vgg_retrain --local_imagenet_path /data/imagenet --epochs 5 --layer-indices 1 2 3 4
-python -m experiments.vgg11.vgg_comb_test --local_imagenet_path /data/imagenet --saved_models_path saved_models
 python -m experiments.vgg11.vgg_comb_test --local_imagenet_path /data/imagenet --saved_models_path saved_models --layer-indices 1 2 3 4
 python -m experiments.vgg11.vgg_versioning --help
 ```
 
-The trainer defaults to `classifier.0` (`idx3`) to preserve its original setting.
-Use `--layer-indices 0 1 2 3 4` for all candidates, or choose a subset such as
-`1 2 3 4`. Saved indices stay fixed when selecting a subset. Training uses
-`r=2` and also unfreezes the classifier; `--saved_models_path` selects the output
-directory. Files are named `vgg11_idx<index>_trained_imagenet.pth`.
+Training defaults to `classifier.0` (`idx3`); the commands above select indices
+1–4. Use `--layer-indices 0 1 2 3 4` for all candidates. Training uses `r=2`
+and also updates the classifier. Checkpoints are named
+`vgg11_idx<index>_trained_imagenet.pth`; `--saved_models_path` sets their directory.
 
-The evaluator defaults to all five indices (32 combinations). The four-layer
-command above evaluates 16 combinations and requires only those four checkpoints.
-Missing or incompatible weights stop evaluation without recording a zero score.
+Evaluation defaults to all five candidates (32 combinations); selecting four
+produces 16 combinations and requires only those four checkpoints.
 
-The profiling script retains its historical `r=4` default for `classifier.0`.
-Pass `--classifier-r 2` to match the training and evaluation architecture. Saved
-historical exports are unchanged; their ratios must be checked before reuse.
+For profiling, pass `--classifier-r 2` to match training. The profiling default
+for `classifier.0` is `r=4`.

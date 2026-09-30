@@ -1,6 +1,6 @@
 # MobileNetV2-SSD-Lite
 
-Source: `mb2ssd_versioning@185b09b`. Install the `[ssd]` or `[all]` extra.
+Install the `[ssd]` or `[all]` extra.
 This implementation corresponds to the paper's MobileNetV2-SSD label.
 
 | Index | Layer | Ratio |
@@ -22,14 +22,7 @@ python -m experiments.mobilenetv2_ssd.mobilenet_retrain --resume /weights/mb2-ss
 python -m experiments.mobilenetv2_ssd.test_comb --dataset /data/test/VOC2007 --label_file /path/to/checkout/experiments/mobilenetv2_ssd/voc-model-labels.txt --baseline_model /weights/mb2-ssd-lite.pth --models_base_dir models
 ```
 
-Repeat the training command for indices 1-3 with the corresponding layer, ratio,
-and checkpoint directory. `train_all_layers.sh` retains all four commands with
-the source's default dataset locations. The evaluator selects variant checkpoint
-files beneath `models/0` through `models/3` and writes
-`mb2ssd_combination_map_results.txt`. Inspect its logging for the selected files.
-`train_ssd.py` is retained for optional baseline training.
-
-The SSD training/evaluation D2S layer intentionally remains separate from the
-shared cropped/padded implementation. `profiling_layer.py` preserves SSD
-profiling's historical group handling. Changing one to another would alter
-experimental behavior.
+Repeat training for indices 1–3 using the layer, ratio, and checkpoint directory
+from the table. Evaluation loads checkpoints from `models/0` through `models/3`
+and writes `mb2ssd_combination_map_results.txt`. `train_ssd.py` supports baseline
+training.
