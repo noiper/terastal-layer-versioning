@@ -22,8 +22,7 @@ Its model, loader, loss, and metric source is not vendored in this release.
 
 No license file was found in that revision or its inspected history. The
 separate Torch implementation's license is not asserted to cover the PyTorch
-implementation. Users must determine applicable upstream permission; this
-project's Apache-2.0 license does not grant rights to that external code.
+implementation. Users must determine applicable upstream permission.
 The adapter loads a user-supplied checkout and does not modify it on disk.
 
 Upstream paper: Fangchang Ma and Sertac Karaman, “Sparse-to-Dense: Depth Prediction
@@ -36,6 +35,3 @@ PyTorch, torchvision, Transformers, NumPy, SciPy, Pillow, OpenCV, pandas, h5py,
 matplotlib, tqdm, and THOP are installed separately. Their code, model weights,
 and datasets retain their respective terms. No pretrained or custom checkpoint
 binaries are included in this source distribution.
-
-The root [Apache-2.0 license](LICENSE) applies to original Terastal code and
-integration adapters, subject to the retained third-party notices above.

@@ -4,8 +4,7 @@ This package contains Terastal's checkpoint, retraining, and combination-evaluat
 adapter. Obtain the model, data loaders, losses, and depth metrics separately from
 [Fangchang Ma and Sertac Karaman's PyTorch implementation](https://github.com/fangchangma/sparse-to-dense.pytorch).
 No upstream source is bundled here. No license file was found in the tested
-upstream revision; this repository's Apache-2.0 license does not grant rights to
-that external code. Determine the applicable upstream permission for your use.
+upstream revision. Determine the applicable upstream permission for your use.
 
 ## External checkout
 
@@ -68,5 +67,3 @@ Use `--workers 0` (the default) for portable loading. Additional workers require
 Linux `fork` because the upstream modules are loaded dynamically. The Figure 4
 metric is `delta1`. Historical paper results are preserved separately under
 `results/paper/sp2dense`; new adapter outputs are not verified paper reproductions.
-
-See [reproduction limits](../../docs/KNOWN_ISSUES.md) for remaining uncertainties.

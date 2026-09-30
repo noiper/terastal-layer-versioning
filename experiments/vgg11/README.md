@@ -2,17 +2,16 @@
 
 Source: `vgg_retrain@1d2294c`.
 
-| Index | Layer | Inferred paper subset |
-|---|---|---|
-| 0 | `features.8` | No |
-| 1 | `features.16` | Yes |
-| 2 | `features.18` | Yes |
-| 3 | `classifier.0` | Yes |
-| 4 | `classifier.3` | Yes |
+| Index | Layer |
+|---|---|
+| 0 | `features.8` |
+| 1 | `features.16` |
+| 2 | `features.18` |
+| 3 | `classifier.0` |
+| 4 | `classifier.3` |
 
-The original 32-row results are preserved. For Figure 4, filter combinations
-containing index 0 without changing that source table. The four-layer selection
-is inferred from the paper's curves, not recovered plotting code.
+The saved result table contains all 32 combinations of these five candidates,
+including the baseline. Use `--layer-indices` to train or evaluate a subset.
 
 ImageNet layout (pass its parent as `--local_imagenet_path`):
 
@@ -39,8 +38,8 @@ python -m experiments.vgg11.vgg_versioning --help
 ```
 
 The trainer defaults to `classifier.0` (`idx3`) to preserve its original setting.
-Use `--layer-indices 1 2 3 4` for the inferred paper subset, or `0 1 2 3 4` for
-all candidates. Saved indices stay fixed when selecting a subset. Training uses
+Use `--layer-indices 0 1 2 3 4` for all candidates, or choose a subset such as
+`1 2 3 4`. Saved indices stay fixed when selecting a subset. Training uses
 `r=2` and also unfreezes the classifier; `--saved_models_path` selects the output
 directory. Files are named `vgg11_idx<index>_trained_imagenet.pth`.
 

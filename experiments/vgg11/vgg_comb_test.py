@@ -309,6 +309,6 @@ if __name__ == '__main__':
     parser.add_argument('--saved_models_path', type=str, default="saved_models", help='Path to the directory containing the saved .pth model files.')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch size for evaluation.')
     parser.add_argument('--workers', type=int, default=8, help='Number of worker processes for data loading.')
-    parser.add_argument("--layer-indices", nargs="+", type=int, choices=range(5), default=list(range(5)), help="Use 1 2 3 4 for the inferred paper subset")
+    parser.add_argument("--layer-indices", nargs="+", type=int, choices=range(5), default=list(range(5)), help="Stable checkpoint indices to evaluate; defaults to all five candidates")
     args = parser.parse_args()
     main(args)

@@ -8,7 +8,6 @@ version = "0.1.0"
 description = "Offline layer-variant experiments for Terastal"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
-license = {file = "LICENSE"}
 dependencies = [
   "torch>=2.3,<2.4",
   "torchvision>=0.18,<0.19",
@@ -30,7 +29,7 @@ all = ["transformers==4.44.2", "opencv-python-headless>=4.8,<4.12", "pandas>=2,<
 include = ["utils*", "experiments*", "vision*"]
 
 [tool.setuptools]
-license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+license-files = ["THIRD_PARTY_NOTICES.md"]
 
 [tool.setuptools.package-data]
 "experiments" = ["*/README.md", "*/exports/*.m", "*/exports/*.txt", "*/voc-model-labels.txt"]

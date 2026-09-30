@@ -79,7 +79,7 @@
       "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
       "path": "vgg_retrain.py",
       "sha256": "db25b4fdba7bce369499b1a45f46fbaf74c2bdce1a80ca64e4e0744d23e85df8",
-      "integrated_sha256": "265fc3b12bce31da22824b54e821f72811c759a6fa181a0d8244702811af68c5",
+      "integrated_sha256": "e377985e24b49a28f93eec77214ec7f106af189f3a3f19bc28dbb70aeaa86eff",
       "modified_during_integration": true
     },
     "experiments/vgg11/vgg_comb_test.py": {
@@ -88,7 +88,7 @@
       "commit": "1d2294cf20a01a7d3f54e97fafe2cca1231fe781",
       "path": "vgg_comb_test.py",
       "sha256": "f79d7ed1f64b4e3e9c63cf4beeb96a4bb8323bad5375aba0872bf987d05f070b",
-      "integrated_sha256": "fb8180d1943c054392fd237b19c69a1330eab9ecf79d7c9c8b181470ca7c5546",
+      "integrated_sha256": "7eb6328595d23b280481a25aba49e58f7904ec7f098b4863c16e205d8e9e48ab",
       "modified_during_integration": true
     },
     "experiments/vgg11/vgg_versioning.py": {

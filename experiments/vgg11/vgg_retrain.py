@@ -376,7 +376,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=256, help='Batch size for training and evaluation.')
     parser.add_argument('--workers', type=int, default=16, help='Number of worker processes for data loading.')
     parser.add_argument('--allow-val-subset', action='store_true', help='Allow a smaller validation set with matching labels for smoke tests.')
-    parser.add_argument("--layer-indices", nargs="+", type=int, choices=range(5), default=[3], help="Stable checkpoint indices; use 1 2 3 4 for the inferred paper subset")
+    parser.add_argument("--layer-indices", nargs="+", type=int, choices=range(5), default=[3], help="Stable checkpoint indices to train; use 0 1 2 3 4 for all candidates")
     parser.add_argument("--saved_models_path", default="saved_models")
     args = parser.parse_args()
     main(args)

@@ -1,5 +1,5 @@
-include LICENSE THIRD_PARTY_NOTICES.md requirements.txt
-include docs/KNOWN_ISSUES.md docs/source_manifest.json
+include THIRD_PARTY_NOTICES.md requirements.txt
+include docs/source_manifest.json
 recursive-include results/paper *.txt *.csv *.md
 recursive-include tests *.py
 prune external
